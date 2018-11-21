@@ -1,12 +1,16 @@
 # Airbnb JavaScript Style Guide() {
 
-## Translator
-This guide in **Persian** is a translation of [Main Repo](https://github.com/airbnb/javascript) by [MohamadKh75](https://github.com/MohamadKh75)
+*A mostly reasonable approach to JavaScript*
 
-## Motarjem
-In rahnama az [manba'e asli](https://github.com/airbnb/javascript) tavasote [MohamadKh75](https://github.com/MohamadKh75) tarjome shode
+> **Note**: this guide assumes you are using [Babel](https://babeljs.io), and requires that you use [babel-preset-airbnb](https://npmjs.com/babel-preset-airbnb) or the equivalent. It also assumes you are installing shims/polyfills in your app, with [airbnb-browser-shims](https://npmjs.com/airbnb-browser-shims) or the equivalent.
 
-Rahnama haye digar:
+[![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb.svg)](https://www.npmjs.com/package/eslint-config-airbnb)
+[![Downloads](https://img.shields.io/npm/dm/eslint-config-airbnb-base.svg)](https://www.npmjs.com/package/eslint-config-airbnb-base)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+This guide is available in other languages too. See [Translation](#translation)
+
+Other Style Guides
 
   - [ES5 (Deprecated)](https://github.com/airbnb/javascript/tree/es5-deprecated/es5)
   - [React](react/)
@@ -14,7 +18,7 @@ Rahnama haye digar:
   - [CSS & Sass](https://github.com/airbnb/css)
   - [Ruby](https://github.com/airbnb/ruby)
 
-## fehrest
+## Table of Contents
 
   1. [Types](#types)
   1. [References](#references)
@@ -95,7 +99,7 @@ Rahnama haye digar:
     console.log(foo[0], bar[0]); // => 9, 9
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## References
 
@@ -146,7 +150,7 @@ Rahnama haye digar:
     console.log(b); // ReferenceError
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Objects
 
@@ -320,7 +324,7 @@ Rahnama haye digar:
     const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Arrays
 
@@ -487,7 +491,7 @@ Rahnama haye digar:
     ];
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Destructuring
 
@@ -556,7 +560,7 @@ Rahnama haye digar:
     const { left, top } = processInput(input);
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Strings
 
@@ -639,7 +643,7 @@ Rahnama haye digar:
     const foo = `my name is '${name}'`;
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Functions
 
@@ -921,7 +925,7 @@ Rahnama haye digar:
     );
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Arrow Functions
 
@@ -1082,7 +1086,7 @@ Rahnama haye digar:
     )
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Classes & Constructors
 
@@ -1247,7 +1251,7 @@ Rahnama haye digar:
     }
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Modules
 
@@ -1401,7 +1405,7 @@ Rahnama haye digar:
     import barCss from 'bar.css';
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Iterators and Generators
 
@@ -1515,7 +1519,7 @@ Rahnama haye digar:
     };
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Properties
 
@@ -1561,7 +1565,7 @@ Rahnama haye digar:
     const binary = 2 ** 10;
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Variables
 
@@ -1793,7 +1797,7 @@ Rahnama haye digar:
     // 'coords' is now the 'data' object without its 'type' property.
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Hoisting
 
@@ -1892,7 +1896,7 @@ Rahnama haye digar:
 
   - For more information refer to [JavaScript Scoping & Hoisting](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting/) by [Ben Cherry](http://www.adequatelygood.com/).
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Comparison Operators & Equality
 
@@ -2071,7 +2075,7 @@ Rahnama haye digar:
     const bar = a + b / c * d;
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Blocks
 
@@ -2187,7 +2191,7 @@ Rahnama haye digar:
     }
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Control Statements
 
@@ -2258,7 +2262,7 @@ Rahnama haye digar:
     }
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Comments
 
@@ -2399,7 +2403,7 @@ Rahnama haye digar:
     }
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Whitespace
 
@@ -2824,7 +2828,7 @@ Rahnama haye digar:
     ```
     <!-- markdownlint-enable MD012 -->
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Commas
 
@@ -2959,7 +2963,7 @@ Rahnama haye digar:
     );
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Semicolons
 
@@ -3009,7 +3013,7 @@ Rahnama haye digar:
 
     [Read more](https://stackoverflow.com/questions/7365172/semicolon-before-self-invoking-function/7365214#7365214).
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Type Casting & Coercion
 
@@ -3098,7 +3102,7 @@ Rahnama haye digar:
     const hasAge = !!age;
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Naming Conventions
 
@@ -3337,7 +3341,7 @@ Rahnama haye digar:
     };
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Accessors
 
@@ -3406,7 +3410,7 @@ Rahnama haye digar:
     }
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Events
 
@@ -3437,7 +3441,7 @@ Rahnama haye digar:
     });
     ```
 
-  **[⬆ back to top](#fehrest)**
+  **[⬆ back to top](#table-of-contents)**
 
 ## jQuery
 
@@ -3506,14 +3510,14 @@ Rahnama haye digar:
     $sidebar.find('ul').hide();
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## ECMAScript 5 Compatibility
 
   <a name="es5-compat--kangax"></a><a name="26.1"></a>
   - [27.1](#es5-compat--kangax) Refer to [Kangax](https://twitter.com/kangax/)’s ES5 [compatibility table](https://kangax.github.io/es5-compat-table/).
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 <a name="ecmascript-6-styles"></a>
 ## ECMAScript 6+ (ES 2015+) Styles
@@ -3541,7 +3545,7 @@ Rahnama haye digar:
 
     > Why? [They are not finalized](https://tc39.github.io/process-document/), and they are subject to change or to be withdrawn entirely. We want to use JavaScript, and proposals are not JavaScript yet.
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Standard Library
 
@@ -3581,7 +3585,7 @@ Rahnama haye digar:
     Number.isFinite(parseInt('2e3', 10)); // true
     ```
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Testing
 
@@ -3603,7 +3607,7 @@ Rahnama haye digar:
     - 100% test coverage is a good goal to strive for, even if it’s not always practical to reach it.
     - Whenever you fix a bug, _write a regression test_. A bug fixed without a regression test is almost certainly going to break again in the future.
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Performance
 
@@ -3617,7 +3621,7 @@ Rahnama haye digar:
   - [Are Javascript functions like `map()`, `reduce()`, and `filter()` optimized for traversing arrays?](https://www.quora.com/JavaScript-programming-language-Are-Javascript-functions-like-map-reduce-and-filter-already-optimized-for-traversing-array/answer/Quildreen-Motta)
   - Loading...
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Resources
 
@@ -3697,7 +3701,7 @@ Rahnama haye digar:
   - [JavaScript Air](https://javascriptair.com/)
   - [JavaScript Jabber](https://devchat.tv/js-jabber/)
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## In the Wild
 
@@ -3800,7 +3804,7 @@ Rahnama haye digar:
   - **Zillow**: [zillow/javascript](https://github.com/zillow/javascript)
   - **ZocDoc**: [ZocDoc/javascript](https://github.com/ZocDoc/javascript)
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Translation
 
@@ -3822,6 +3826,7 @@ Rahnama haye digar:
   - ![tr](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Turkey.png) **Turkish**: [eraycetinay/javascript](https://github.com/eraycetinay/javascript)
   - ![ua](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Ukraine.png) **Ukrainian**: [ivanzusko/javascript](https://github.com/ivanzusko/javascript)
   - ![vn](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Vietnam.png) **Vietnam**: [hngiang/javascript-style-guide](https://github.com/hngiang/javascript-style-guide)
+  - ![br](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Iran.png) **Persian (Transliterated)**: [MohamadKh75/Airbnb_JavaScript_Style_Guide_Persian](https://github.com/MohamadKh75/Airbnb_JavaScript_Style_Guide_Persian)
 
 ## The JavaScript Style Guide Guide
 
@@ -3860,7 +3865,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-**[⬆ back to top](#fehrest)**
+**[⬆ back to top](#table-of-contents)**
 
 ## Amendments
 
